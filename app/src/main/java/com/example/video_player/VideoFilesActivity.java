@@ -1,5 +1,6 @@
 package com.example.video_player;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,12 +11,15 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
+
 
 import com.example.video_player.Adapter.VideoFilesAdapter;
 import com.example.video_player.models.MediaFiles;
@@ -31,14 +35,20 @@ public class VideoFilesActivity extends AppCompatActivity  implements SearchView
     String folder_name;
     SwipeRefreshLayout swipeRefreshLayout;
     String sortOrder;
-
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_files);
         folder_name = getIntent().getStringExtra("folderName");
+        Toolbar toolbar = findViewById(R.id.my_toolbar2);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(folder_name);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //  folder_name = getIntent().getStringExtra("folderName");
+
+
         recyclerView = findViewById(R.id.videos_rv);
         swipeRefreshLayout = findViewById(R.id.swipe_refresh_videos);
         SharedPreferences.Editor editor = getSharedPreferences(MY_PREF, MODE_PRIVATE).edit();

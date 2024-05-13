@@ -2,6 +2,7 @@ package com.example.video_player;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,6 +11,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.session.MediaSession;
 import android.net.Uri;
 import android.os.Build;
@@ -36,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        if( actionBar != null){
+            actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0165E1")));
+            actionBar.setTitle("Files");
+        }
+
 
         recyclerView = findViewById(R.id.folders_rv);
         swipeRefreshLayout = findViewById(R.id.swipe_refresh_folders);

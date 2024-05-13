@@ -12,9 +12,9 @@
 
     <ImageView
         android:id="@+id/allowicon"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:src="@drawable/allowaccess"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/apparotechlogo"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         />
@@ -28,10 +28,11 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/text1"
-        android:textColor="@color/black"
+        android:textColor="#0165E1"
         android:textSize="30sp" />
 
     <Button
+        android:backgroundTint="#0165E1"
         android:id="@+id/allow_access"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
         android:textAllCaps="false"
         android:layout_marginBottom="20dp"
         android:textColor="@android:color/white"
+        android:padding="10dp"
         />
 
 </RelativeLayout>

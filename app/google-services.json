@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486241102542",
+    "project_id": "infinity-player-2fba3",
+    "storage_bucket": "infinity-player-2fba3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486241102542:android:e722cd821453efd080fe9f",
+        "android_client_info": {
+          "package_name": "com.apparotech.video_player"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDejf5BHideRF5aJktRgJZlMj5xcFDg7EA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

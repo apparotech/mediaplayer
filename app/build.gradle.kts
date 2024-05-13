@@ -1,5 +1,10 @@
+
+
 plugins {
     id("com.android.application")
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -7,7 +12,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.video_player"
+        applicationId = "com.apparotech.video_player"
         minSdk = 26
         targetSdk = 33
         versionCode = 1
@@ -15,13 +20,25 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+     signingConfigs {
+        create("release") {
+            
+
+        }
+     }
+
 
     buildTypes {
         release {
             isMinifyEnabled = false
+            isDebuggable = false
+
+
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
+
             )
         }
     }
@@ -48,7 +65,11 @@ dependencies {
     //FILE PICKER
     implementation ("com.github.angads25:filepicker:1.1.1")
 
-
-
     annotationProcessor ("com.github.bumptech.glide:compiler:5.0.0-rc01")
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
 }

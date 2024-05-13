@@ -8,10 +8,23 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/black"
+        app:title="File"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0165E1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/swipe_refresh_folders">
+    android:id="@+id/swipe_refresh_folders"
+        android:layout_marginTop="55dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

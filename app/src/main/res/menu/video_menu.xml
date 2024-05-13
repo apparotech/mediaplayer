@@ -5,11 +5,16 @@
         android:title="Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"
-        app:actionViewClass="android.widget.SearchView" />
-    <item android:id="@+id/refresh_files"
+        app:actionViewClass="android.widget.SearchView"
+        android:iconTint="@color/white"/>
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/refresh_files"
         android:title="Refresh"
         app:showAsAction="never"/>
-    <item android:id="@+id/sort_by"
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/sort_by"
         android:title="Sort By"
         app:showAsAction="never"/>
 </menu>

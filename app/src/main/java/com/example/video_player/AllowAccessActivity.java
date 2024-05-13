@@ -2,6 +2,7 @@ package com.example.video_player;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -17,6 +18,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import com.google.android.exoplayer2.util.Util;
 
@@ -28,11 +30,17 @@ public class AllowAccessActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); 
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_allow_access);
 
         allow_btn = findViewById(R.id.allow_access);
         SharedPreferences preferences = getSharedPreferences("AllowAccess", MODE_PRIVATE);
+
+       // ActionBar actionBar = getSupportActionBar();
+      //  if (actionBar != null){
+         //   actionBar.hide();
+       // }
 
         String value = preferences.getString("Allow","");
         if (value.equals("OK")) {
