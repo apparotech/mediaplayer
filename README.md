@@ -8,6 +8,9 @@ File Str:
 
 Photo:
 
+![iconinfityvideoplayer](https://github.com/user-attachments/assets/c0e1c6c8-e84b-4831-a9f6-1c221cc024c4)
+
+
 ![infinity_player_console05](https://github.com/user-attachments/assets/68e3e810-b1f7-4ca2-a1d3-1e609c72da0a)
 
 ![fileinfinty](https://github.com/user-attachments/assets/302087a9-a4cc-4abb-914f-05e73d3b2079)
