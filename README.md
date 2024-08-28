@@ -6,4 +6,9 @@ Dependecy:
 File Str:
 ![image](https://github.com/user-attachments/assets/2774be29-6847-4037-a671-85edd8a520ae)
 
+Photo:
+
+![infinity_player_console05](https://github.com/user-attachments/assets/68e3e810-b1f7-4ca2-a1d3-1e609c72da0a)
+
+
 
