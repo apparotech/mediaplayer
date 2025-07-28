@@ -16,5 +16,12 @@ Photo:
 ![fileinfinty](https://github.com/user-attachments/assets/302087a9-a4cc-4abb-914f-05e73d3b2079)
 
 
+<img width="1024" height="500" alt="image-1024x500" src="https://github.com/user-attachments/assets/f087de11-f8f6-4cdc-8464-d6547b210771" />
+
+<img width="1024" height="512" alt="image-1024x512" src="https://github.com/user-attachments/assets/f55deed5-c783-4aa1-a94e-af9b73d3f7f6" />
+
+
+
+
 
 
